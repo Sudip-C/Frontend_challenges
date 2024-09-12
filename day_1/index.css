@@ -1,0 +1,106 @@
+header{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    width: 25%;
+    padding-bottom: 40px;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile_name{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.social_media{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social_media img{
+width: 10%;
+}
+.description{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons button{
+    padding: 10px;
+    width: 120px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    background-color: white;
+    color: grey;
+    font-weight: 600;
+}
+.buttons :hover{
+    background-color: #e9368f;
+    color: white;
+    border-color: #e9368f;
+}
+
+.curved-box {
+    position: relative;
+    height: 200px;
+    background-color: #a83264; /* dark red/maroon background */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Profile image in the center */
+  .profile-img {
+    position: absolute;
+    top: 20px; /* Positioning the image slightly above */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff; /* White border around the image */
+  }
+  
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Layered curves at the bottom */
+  .curves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to right, #ff007f, #ff66b2); /* Gradient for the pink wave */
+    clip-path: ellipse(70% 100% at 50% 100%);
+  }
+  
+  .curves::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to right, #eab0ff, #ff99cc); /* Layered pink wave */
+    clip-path: ellipse(50% 100% at 50% 100%);
+  }
+  
