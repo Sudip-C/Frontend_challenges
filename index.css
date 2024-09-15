@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    height: 100vh;
+    background-color: #070707;
+  }
+  
+  .carousel {
+
+    position: relative;
+    width: 400px; /* Set carousel width */
+    height: 400px; /* Set carousel height */
+    overflow: hidden; /* Hide overflowing images */
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%; /* Only show one image at a time */
+    height: 100%; /* Make the image fit the container */
+    object-fit: cover; /* Ensure the image scales properly */
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .carousel-control1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  .images{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .images img{
+    width: 10%;
+    object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  }
+  .images img.active {
+    border-color: #ffffff;
+  }
